@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Environment and secrets
+.env
+
+# Data and logs
+data/raw/
+data/vectorstore/
+logs/
+*.log
+
+# Exclude all processed data EXCEPT the final results and key debugging milestones
+data/processed/*
+!data/processed/benchmark_results_REPORT_FINAL.json
+!data/processed/benchmark_results_n20.json
+!data/processed/cosine_fix_test.json
+!data/processed/final_fixes_test.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Models cache
+.cache/
+models/
+
+# OS
+.DS_Store
+Thumbs.db

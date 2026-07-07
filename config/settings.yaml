@@ -1,0 +1,21 @@
+max_pages_per_query: 35
+max_crawl_depth: 3
+max_iterations: 5
+confidence_threshold: 0.70
+top_k: 10
+chunk_size_tokens: 120
+chunk_overlap_tokens: 40
+rerank_enabled: true
+rerank_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+retrieve_multiplier: 3
+requests_per_second_per_domain: 1.0
+min_content_length: 200
+openrouter_model: "meta-llama/llama-3.3-70b-instruct:free"
+embedding_model: "all-MiniLM-L6-v2"
+nli_model: "cross-encoder/nli-deberta-v3-base"
+user_agent: "AgenticCrawlerUniProject/1.0 (Educational IR coursework project; contact: f.zardodkhonova@studenti.unina.it)"
+log_level: "INFO"
+log_file: "logs/agentic_crawler.log"
+http_timeout_seconds: 30
+max_retries: 6
+retry_base_delay_seconds: 5.0
